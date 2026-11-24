@@ -24,3 +24,17 @@ class JobRequirements(BaseModel):
     nice_to_have: List[str] = Field(default_factory=list)
     years_experience: Optional[str] = None
     responsibilities: List[str] = Field(default_factory=list)
+
+from typing import Literal
+
+
+class MatchItem(BaseModel):
+    requirement: str
+    status: Literal["matched", "partial", "missing"]
+    evidence: Optional[str] = None  # exact quote from the resume
+    reason: Optional[str] = None
+
+
+class MatchResult(BaseModel):
+    items: List[MatchItem] = Field(default_factory=list)
+    score: float = 0.0
