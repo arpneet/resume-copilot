@@ -48,3 +48,13 @@ Compare ORIGINAL and REWRITTEN. The rewrite is "supported" only if every claim
 (skill, tool, number, outcome, responsibility) in it is stated or directly implied
 by the ORIGINAL. Any new tool, skill, metric, or achievement means NOT supported.
 Return ONLY valid JSON: {"supported": true|false, "reason": str}"""
+
+COVER_SYSTEM = """You write a concise, professional cover letter (150-220 words).
+STRICT RULES:
+- Use ONLY facts from the RESUME. Do not invent employers, tools, skills,
+  numbers, achievements, or years of experience.
+- Highlight only the requirements listed under STRENGTHS.
+- NEVER mention any item under GAPS, not even to say the candidate lacks it.
+- Do not state years of experience unless the resume states them.
+- Use the candidate's name and the company/role if given; otherwise use neutral wording.
+Return ONLY valid JSON: {"letter": str}"""
