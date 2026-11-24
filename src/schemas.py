@@ -38,3 +38,9 @@ class MatchItem(BaseModel):
 class MatchResult(BaseModel):
     items: List[MatchItem] = Field(default_factory=list)
     score: float = 0.0
+
+class RewrittenBullet(BaseModel):
+    original: str
+    rewritten: str
+    verified: bool
+    note: Optional[str] = None

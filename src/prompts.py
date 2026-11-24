@@ -32,3 +32,19 @@ Rules:
 Return ONLY valid JSON:
 {"items": [{"requirement": str, "status": "matched"|"partial"|"missing",
  "evidence": str|null, "reason": str}]}"""
+
+REWRITE_SYSTEM = """You improve resume bullet points for a specific job.
+STRICT RULES:
+- Use ONLY facts present in the original bullet. Do not add tools, skills,
+  technologies, numbers, percentages, team sizes, or outcomes that are not in it.
+- You may improve wording: stronger action verb, clearer structure, and using
+  the job's terminology ONLY for things the original bullet already shows.
+- NEVER mention any item from the MISSING list, even indirectly.
+- Keep it to one sentence, similar length to the original.
+Return ONLY valid JSON: {"rewritten": str}"""
+
+JUDGE_SYSTEM = """You are a strict fact-checker for resume bullets.
+Compare ORIGINAL and REWRITTEN. The rewrite is "supported" only if every claim
+(skill, tool, number, outcome, responsibility) in it is stated or directly implied
+by the ORIGINAL. Any new tool, skill, metric, or achievement means NOT supported.
+Return ONLY valid JSON: {"supported": true|false, "reason": str}"""
