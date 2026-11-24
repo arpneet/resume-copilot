@@ -1,0 +1,11 @@
+Data Analyst
+
+Requirements:
+- 2+ years of experience in data analysis
+- Strong SQL skills
+- Experience with Python (pandas)
+- Power BI or Tableau dashboards
+- Strong communication skills
+
+Nice to have:
+- Experience with A/B testing

@@ -1,0 +1,18 @@
+Jane Doe
+Marketing Analyst | jane.doe@example.com
+
+SKILLS
+Excel, SQL, Power BI, Google Analytics, Data Visualization, Stakeholder Reporting
+
+EXPERIENCE
+Marketing Analyst, BrightWave Media (2022 - 2024)
+- Built weekly dashboards in Power BI to track campaign performance
+- Wrote SQL queries to pull customer data for monthly reports
+- Presented findings to the marketing team to guide budget decisions
+
+Research Assistant, Northfield Consulting (2020 - 2022)
+- Collected and cleaned survey data in Excel
+- Summarized market trends for client presentations
+
+EDUCATION
+B.Com, Commerce, Sample University (2020)
