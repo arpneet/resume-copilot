@@ -104,4 +104,5 @@ The verifier tests run offline and check that injected skills and numbers are ca
 
 Sample data in `samples/` is fictional. This tool assists with drafting; always review output before sending it to an employer.
 
-<img width="756" height="502" alt="image" src="https://github.com/user-attachments/assets/ccbf9494-ba6d-491c-b8ec-932f25c03d57" />
+<img width="1027" height="514" alt="image" src="https://github.com/user-attachments/assets/f7c3998d-b5bc-4f7a-ad02-479ff9932ef5" />
+
